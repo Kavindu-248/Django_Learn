@@ -15,5 +15,5 @@ def home(request):
     return render(request, 'base/home.html', context)
 
 
-def room(request):
-    return render(request, 'room.html')
+def room(request, pk):
+    return render(request, 'base/room.html')
