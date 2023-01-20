@@ -1,7 +1,11 @@
-{% extends 'main.html' %} {% content block %}
+{% extends 'main.html' %} {% block content %}
 
 <div>
-  <form method="POST" action="">{% crsf_token %}</form>
+  <form method="POST" action="">
+    {% crsf_token %}
+
+    <input type="submit" value="Submit" />
+  </form>
 </div>
 
 {% endblock content %}
