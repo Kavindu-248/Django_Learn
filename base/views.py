@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Room, Topic
 from .forms import RoomForm
+from django.db.models import Q
 
 
 # Create your views here.
